@@ -5,6 +5,7 @@ import React from "react";
 const page = () => {
   const myData = {
     heading: "This is my heading",
+    mainHeading: "Services",
     service: {
       title: "Service Title",
       description: "Service Description",

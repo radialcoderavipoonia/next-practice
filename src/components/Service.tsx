@@ -2,6 +2,7 @@ import React from "react";
 interface Iprops {
   data: {
     heading: string;
+    mainHeading: string;
     service: {
       title: string;
       description: string;
@@ -10,12 +11,12 @@ interface Iprops {
   };
 }
 const Service = (props: Iprops) => {
-  const { heading, service } = props.data;
+  const { heading, service,mainHeading } = props.data;
   const { title, description, bio } = service;
   return (
     <>
       <div className="max-w-[640px] px-3 mx-auto flex justify-center items-center h-full flex-col">
-        <h2 className="text-[48px] font-bold">Services</h2>
+        <h2 className="text-[48px] font-bold">{mainHeading}</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita
           facere voluptate aspernatur enim porro repellat recusandae molestiae

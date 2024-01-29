@@ -3,14 +3,15 @@ interface Iprops {
   name: string;
   rollNo: number;
   present: boolean;
+  mainHeading: string;
 }
 
 const About = (props: Iprops) => {
-  const { name, rollNo, present } = props;
+  const { name, rollNo, present, mainHeading } = props;
   return (
     <>
       <div className="max-w-[640px] px-3 mx-auto flex justify-center items-center h-full flex-col">
-        <h2 className="text-[48px] font-bold">About</h2>
+        <h2 className="text-[48px] font-bold">{mainHeading}</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita
           facere voluptate aspernatur enim porro repellat recusandae molestiae
