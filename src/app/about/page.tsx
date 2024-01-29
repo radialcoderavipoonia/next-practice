@@ -1,6 +1,4 @@
-import About from "@/components/About";
-import NavBar from "@/components/NavBar";
-import React from "react";
+import About from "@/components/about/About";
 
 const Page = () => {
   const myName = "Ravi";
@@ -11,7 +9,6 @@ const Page = () => {
   return (
     <>
       <div className="h-[80vh]">
-        <NavBar />
         <About
           name={myName}
           rollNo={rollNumber}

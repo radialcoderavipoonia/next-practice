@@ -1,6 +1,4 @@
-import NavBar from "@/components/NavBar";
-import Service from "@/components/Service";
-import React from "react";
+import Service from "@/components/services/Service";
 
 const page = () => {
   const myData = {
@@ -15,7 +13,6 @@ const page = () => {
   return (
     <>
       <div className="h-[80vh]">
-        <NavBar />
         <Service data={myData} />
       </div>
     </>
