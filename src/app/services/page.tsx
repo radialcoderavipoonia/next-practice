@@ -1,4 +1,4 @@
-import Service from "@/components/services/Service";
+import Service from "@/components/services/ServiceHero";
 
 const page = () => {
   const myData = {
